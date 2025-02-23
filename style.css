@@ -1,0 +1,471 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    font-family: 'Courier New', monospace;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: whitesmoke;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+    border-radius: 5px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+/* Header */
+header {
+    padding: 0.5rem 2rem;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    position: sticky;
+    top: 0;
+    background-color: #222; /* Added background to prevent transparency */
+    z-index: 1000; /* Ensures it stays on top */
+}
+
+header h2 {
+    font-size: 2rem;
+    color: #00ff00;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    margin-left: 1.2rem;
+    font-size: 1.3rem;
+    transition: color 0.3s ease-in-out;
+}
+
+header button {
+    margin-left: 1.2rem;
+    background: none;
+    border: none;
+    color: whitesmoke;
+    font-size: 1.3rem;
+}
+
+header a:hover {
+    color: #00ff00;
+}
+
+/* Intro Section Styling */
+#description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 80px 50px;
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+    gap: 40px; /* Space between text & image */
+    min-height: 80vh; /* Ensuring a decent section size */
+}
+
+/* Description: Text & Image Combined */
+.description-text, .description-img {
+    width: 50%;
+    flex: 1;
+}
+
+/* Text Styling */
+.description-text {
+    font-size: 24px;
+    line-height: 1.6;
+    color: #f0f0f0;
+}
+
+/* "Hello there!" */
+.description-text div:first-child {
+    font-size: 28px;
+    font-weight: bold;
+    color: #00ff00;
+}
+
+/* Name Styling */
+.gradient {
+    font-size: 48px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #00ff00, #00ccff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Description Text */
+.desc1 {
+    font-size: 20px;
+    opacity: 0.8;
+    margin-top: 10px;
+}
+
+.desc2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #00ccff;
+    margin-top: 15px;
+}
+
+/* Image Section - Centered */
+.description-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Profile Image */
+.description-img img {
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Projects Section */
+.projects {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #00ff00;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.project {
+    background: #2a2a2a;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    /* max-width: 300px; */
+    width: 45%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+.project h3 {
+    font-size: 1.75rem;
+    color: #00ff00;
+    margin-bottom: 0.5rem;
+}
+
+.project p {
+    color: #ccc;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.project-link {
+    display: inline-block;
+    color: #00ccff;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #00ccff;
+    border-radius: 5px;
+    padding: 0.5rem 1.2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #00ccff;
+    color: #1a1a1a;
+}
+
+
+hr {
+    border: none;
+    border-top: 2px solid #00ff00;
+    margin: 2rem 0;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.experience {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.experience h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #00ff00;
+}
+
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.experience-item {
+    background: #2a2a2a;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 60%;
+    text-align: left;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.experience-item h3 {
+    font-size: 1.8rem;
+    color: #00ff00;
+    margin-bottom: 0.5rem;
+}
+
+.experience-item p {
+    color: #ccc;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #222; /* Slightly different background to separate it */
+    border-radius: 10px;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #00ff00;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    color: #f0f0f0;
+    margin-bottom: 1.5rem;
+}
+
+/* Contact List Styling */
+.contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact ul li {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contact ul li i {
+    font-size: 1.5rem;
+    color: #00ff00;
+}
+
+/* Contact Links */
+.contact a {
+    text-decoration: none;
+    color: #00ccff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact a:hover {
+    color: #00ff00;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* When visible, animate in */
+.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Light Mode */
+body.light-mode {
+    background-color: #f8f8f8; /* Warm off-white */
+    color: #2a2a2a; 
+}
+
+body.light-mode ::-webkit-scrollbar-track {
+    background: #f0f0f0;
+}
+
+body.light-mode ::-webkit-scrollbar-thumb {
+    background: #c0c0c0;
+}
+
+body.light-mode ::-webkit-scrollbar-thumb:hover {
+    background: #a0a0a0;
+}
+
+body.light-mode header {
+    background-color: #f3f3f3; /* Slightly darker than body */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+body.light-mode header a,
+body.light-mode header button {
+    color: #3a3a3a;
+}
+
+body.light-mode header a:hover {
+    color: #00cc00; /* Darker green for better contrast */
+}
+
+body.light-mode .description-text {
+    color: #444;
+}
+body.light-mode .desc2 {
+    color: #0066cc;
+}
+
+/* Project Cards */
+body.light-mode .project {
+    background: #fdfdfd; /* Almost white but slightly off */
+    border-color: #e0e0e0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+}
+
+body.light-mode .project p {
+    color: #555;
+}
+
+/* Experience Items */
+body.light-mode .experience-item {
+    background: #fafafa;
+    border-color: #e0e0e0;
+}
+
+body.light-mode .experience-item p {
+    color: #555;
+}
+
+/* Contact Section */
+body.light-mode .contact {
+    background: #f5f5f5;
+}
+
+/* Text Links */
+body.light-mode .contact a  {
+    color: #0066cc; /* Deeper blue */
+}
+body.light-mode .contact p  {
+    color: #555; /* Deeper blue */
+}
+
+body.light-mode .contact a:hover {
+    color: #004499;
+}
+
+/* Borders and Accents */
+body.light-mode hr {
+    border-color: #00aa00; /* Softer green */
+}
+
+/* Project Links */
+body.light-mode .project-link {
+    border-color: #0066cc;
+    color: #0066cc;
+}
+
+body.light-mode .project-link:hover {
+    background-color: #0066cc;
+    color: #f8f8f8;
+}
+
+body.light-mode .description-text div:first-child {
+    color: #00cc00;
+}
+
+/* Maintain cyberpunk accents */
+body.light-mode .gradient {
+    background: linear-gradient(90deg, #00cc00, #0066cc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+body.light-mode h2,
+body.light-mode .project h3,
+body.light-mode .experience-item h3,
+body.light-mode .contact ul li i  {
+    color: #00cc00;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-text, .intro-img {
+        width: 100%;
+    }
+
+    .intro-img {
+        margin-top: 20px;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+}
