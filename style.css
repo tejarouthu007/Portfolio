@@ -137,6 +137,29 @@ header a:hover {
     align-items: center;
 }
 
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #00ff00;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.social-links a i {
+    margin-right: 5px;
+}
+
+.social-links a:hover {
+    color: #00ccff;
+}
+
 /* Profile Image */
 .description-img img {
     width: 60%;
@@ -403,6 +426,13 @@ body.light-mode .contact a:hover {
     color: #004499;
 }
 
+body.light-mode .social-links a {
+    color: #00aa00;
+}
+
+body.light-mode .social-links a:hover {
+    color: #004499;
+}
 /* Borders and Accents */
 body.light-mode hr {
     border-color: #00aa00; /* Softer green */
